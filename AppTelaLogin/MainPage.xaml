@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTelaLogin.MainPage"
+             Title="Login">
+
+    <ScrollView>
+        <Grid
+		Padding="10"
+		RowSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition
+				Height="100"/>
+                <RowDefinition
+				Height="20"/>
+                <RowDefinition
+				Height="Auto"/>
+                <RowDefinition
+				Height="20"/>
+                <RowDefinition
+				Height="Auto"/>
+                <RowDefinition
+				Height="Auto"/>
+                <RowDefinition
+				Height="30"/>
+                <RowDefinition
+				Height="20"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Image
+                x:Name="imgLogin"
+                Source="profile.png"
+				Grid.Row="0"
+				Grid.ColumnSpan="2"
+                HeightRequest="100"
+                WidthRequest="300"/>
+
+            <Label
+				x:Name="lblRaEmailCpf"
+				Text="RA, Email ou CPF"
+				Grid.Row="1"
+				Grid.Column="0"
+                FontFamily="Calibri"/>
+            <Entry
+				x:Name="etrRaEmailCpf"
+				Grid.Row="2"
+				Grid.Column="0"
+				BackgroundColor="LightGray"
+                FontFamily="Calibri"/>
+            <Button
+				x:Name="btnLimpar1"
+				Text="Limpar"
+				Grid.Row="2"
+				Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontFamily="Calibri"
+                BackgroundColor="DarkViolet"/>
+
+
+            <Label
+				x:Name="lblSenha"
+				Text="Senha"
+				Grid.Row="3"
+				Grid.Column="0"
+                FontFamily="Calibri"/>
+            <Entry
+				x:Name="etrSenha"
+				Grid.Row="4"
+				Grid.Column="0"
+				BackgroundColor="LightGray"
+                FontFamily="Calibri"/>
+            <Button
+				x:Name="btnLimpar"
+				Text="Limpar"
+				Grid.Row="4"
+				Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                FontFamily="Calibri"
+                BackgroundColor="DarkViolet"/>
+
+
+            <Button
+				x:Name="btnAcessar"
+				Text="Acessar"
+				Grid.Row="5"
+				Grid.ColumnSpan="2"
+                FontFamily="Calibri"
+                BackgroundColor="DarkViolet"/>
+
+
+            <Label
+				x:Name="lblCadastrar"
+				Text="Não Possui conta? Cadastre-se aqui."
+				Grid.Row="6"
+				Grid.ColumnSpan="2"
+                HorizontalTextAlignment="Center"
+                FontFamily="Calibri"/>
+            <Label
+				x:Name="lblEsqueceuSenha"
+				Text="Esqueceu a senha? Clique aqui."
+				Grid.Row="7"
+				Grid.ColumnSpan="2"
+                HorizontalTextAlignment="Center"
+                FontFamily="Calibri"/>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
