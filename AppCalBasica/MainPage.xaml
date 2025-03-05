@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCalBasica.MainPage">
+    <ScrollView>
+        <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="lblTitulo" Text="Calculadora Básica" Grid.Row="0" Grid.ColumnSpan="3" HorizontalOptions="Center" FontSize="Medium"/>
+
+            <Label x:Name="lblValor1" Text="Valor 1" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="etrValor1" Grid.Row="2" Grid.Column="0" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblValor2" Text="Valor 2" Grid.Row="1" Grid.Column="1"/>
+            <Entry x:Name="etrValor2" Grid.Row="2" Grid.Column="1" BackgroundColor="LightGray" TextColor="Black"/>
+            <Button x:Name="btnSomar" Text="Somar" Grid.Row="2" Grid.Column="2" TextColor="White"/>
+
+
+            <Label x:Name="lblValor3" Text="Valor 3" Grid.Row="3" Grid.Column="0"/>
+            <Entry x:Name="etrValor3" Grid.Row="4" Grid.Column="0" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblValor4" Text="Valor 4" Grid.Row="3" Grid.Column="1"/>
+            <Entry x:Name="etrValor4" Grid.Row="4" Grid.Column="1" BackgroundColor="LightGray" TextColor="Black"/>
+            <Button x:Name="btnSubtrair" Text="Subtrair" Grid.Row="4" Grid.Column="2" TextColor="White"/>
+
+            <Label x:Name="lblValor5" Text="Valor 5" Grid.Row="5" Grid.Column="0"/>
+            <Entry x:Name="etrValor5" Grid.Row="6" Grid.Column="0" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblValor6" Text="Valor 6" Grid.Row="5" Grid.Column="1"/>
+            <Entry x:Name="etrValor6" Grid.Row="6" Grid.Column="1" BackgroundColor="LightGray" TextColor="Black"/>
+            <Button x:Name="btnMultiplicar" Text="Multiplicar" Grid.Row="6" Grid.Column="2" TextColor="White"/>
+
+            <Label x:Name="lblValor7" Text="Valor 7" Grid.Row="7" Grid.Column="0"/>
+            <Entry x:Name="etrValor7" Grid.Row="8" Grid.Column="0" BackgroundColor="LightGray" TextColor="Black"/>
+
+            <Label x:Name="lblValor8" Text="Valor 8" Grid.Row="7" Grid.Column="1"/>
+            <Entry x:Name="etrValor8" Grid.Row="8" Grid.Column="1" BackgroundColor="LightGray" TextColor="Black"/>
+            <Button x:Name="btnDividir" Text="Dividir" Grid.Row="8" Grid.Column="2" TextColor="White"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
+
